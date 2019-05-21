@@ -32,6 +32,7 @@
         }
         "data" : {
           "via" : [
+            "http://data.vlaanderen.be/ns/besluitvorming#heeftVersie",
             "http://mu.semte.ch/vocabularies/ext/file",
             "^http://www.semanticdesktop.org/ontologies/2007/01/19/nie#dataSource"
           ],
