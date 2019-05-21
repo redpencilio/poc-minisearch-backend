@@ -55,6 +55,7 @@ services:
     volumes:
       - ./data/elasticsearch/:/usr/share/elasticsearch/data
     environment:
+      TAKE_FILE_OWNERSHIP: /usr/share/elasticsearch/data
       ES_JAVA_OPTS: "-Xms32g -Xmx32g"
   kibana:
     image: docker.elastic.co/kibana/kibana:6.4.2
