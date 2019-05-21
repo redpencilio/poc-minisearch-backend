@@ -55,6 +55,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/documents/"
   end
 
+  match "/document-versions/*path" do
+    Proxy.forward conn, path, "http://resource/document-versions/"
+  end
+
 
   match _ do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
