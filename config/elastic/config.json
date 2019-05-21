@@ -29,7 +29,7 @@
             "http://purl.org/dc/terms/subject",
             "http://www.w3.org/2004/02/skos/core#prefLabel"
           ]
-        }
+        },
         "data" : {
           "via" : [
             "http://data.vlaanderen.be/ns/besluitvorming#heeftVersie",
