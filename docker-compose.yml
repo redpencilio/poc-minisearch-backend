@@ -68,7 +68,7 @@ services:
     volumes:
       - ./data/files:/share
   document-conversion:
-    build: https://github.com/kanselarij-vlaanderen/document-conversion-service.git
+    image: kanselarij/document-conversion-service:latest
     environment:
       NODE_ENV: "development"
     links:
