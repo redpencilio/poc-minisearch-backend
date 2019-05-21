@@ -22,14 +22,12 @@
       "properties": {
         "title" : "http://purl.org/dc/terms/title",
         "description" : "http://mu.semte.ch/vocabularies/ext/omschrijving",
-        "theme": {
-          "via": [
-            "http://data.vlaanderen.be/ns/besluitvorming#heeftVersie",
-            "^http://mu.semte.ch/vocabularies/ext/bevatDocumentversie",
-            "http://purl.org/dc/terms/subject",
-            "http://www.w3.org/2004/02/skos/core#prefLabel"
-          ]
-        },
+        "theme": [
+          "http://data.vlaanderen.be/ns/besluitvorming#heeftVersie",
+          "^http://mu.semte.ch/vocabularies/ext/bevatDocumentversie",
+          "http://purl.org/dc/terms/subject",
+          "http://www.w3.org/2004/02/skos/core#prefLabel"
+        ],
         "data" : {
           "via" : [
             "http://data.vlaanderen.be/ns/besluitvorming#heeftVersie",
