@@ -7,6 +7,11 @@
 # File service
 /data/files/*
 
+# ElasticSearch
+/data/elasticsearch/*
+
 # Emacs and Mac
 *~
 .DS_Store
+
+docker-compose.override.yml
