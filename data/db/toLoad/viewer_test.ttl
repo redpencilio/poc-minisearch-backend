@@ -1,0 +1,69 @@
+@prefix ext: <http://mu.semte.ch/vocabularies/ext/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix mu: <http://mu.semte.ch/vocabularies/core/> .
+@prefix besluitvorming: <http://data.vlaanderen.be/ns/besluitvorming#> .
+@prefix besluit: <http://data.vlaanderen.be/ns/besluit#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix nie: <http://www.semanticdesktop.org/ontologies/2007/01/19/nie#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+
+<http://kanselarij.vo.data.gift/id/documenten/c66b2907-1dbb-4959-a850-cd3cd29b6827> a foaf:Document ;
+    besluitvorming:heeftVersie <http://kanselarij.vo.data.gift/id/document-versies/30454bbd-691a-4e2a-b932-45859df3a5e1> ;
+    ext:documentType <http://kanselarij.vo.data.gift/id/concept/document-type-codes/9e5b1230-f3ad-438f-9c68-9d7b1b2d875d>;
+    besluitvorming:stuknummerVR "Doc 1 word" ;
+    mu:uuid "c66b2907-1dbb-4959-a850-cd3cd29b6827" .
+
+<http://kanselarij.vo.data.gift/id/document-versies/30454bbd-691a-4e2a-b932-45859df3a5e1> a ext:DocumentVersie ;
+    mu:uuid "30454bbd-691a-4e2a-b932-45859df3a5e1" ;
+    ext:file <http://kanselarij.vo.data.gift/files/9ac76563-6c63-4902-b24d-a963be46e058> ;
+    ext:gekozenDocumentNaam "Doc ver 1 word" ;
+    ext:omschrijving "Een document versie" ;
+    ext:versieNummer 1 .
+
+<http://kanselarij.vo.data.gift/files/9ac76563-6c63-4902-b24d-a963be46e058> a nfo:FileDataObject ;
+    mu:uuid "9ac76563-6c63-4902-b24d-a963be46e058" ;
+    dbpedia:fileExtension "docx" ;
+    dct:format "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ;
+    nfo:fileName "nota word" .
+
+<share://nota.docx> a nfo:FileDataObject ;
+    dbpedia:fileExtension "docx" ;
+    mu:uuid "e8862fe2-5136-4032-9e56-7c8a6927f70a" ;
+    dct:format "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ;
+    nie:dataSource <http://kanselarij.vo.data.gift/files/9ac76563-6c63-4902-b24d-a963be46e058> ;
+    nfo:fileName "nota word" .
+
+
+<http://kanselarij.vo.data.gift/id/documenten/e9bcc2fe-b4bc-444a-972d-34bf7a39b01b> a foaf:Document ;
+    besluitvorming:heeftVersie <http://kanselarij.vo.data.gift/id/document-versies/36da8b39-caed-43ff-8114-5845113980b6> ;
+    ext:documentType <http://kanselarij.vo.data.gift/id/concept/document-type-codes/9e5b1230-f3ad-438f-9c68-9d7b1b2d875d>;
+    besluitvorming:stuknummerVR "Doc 1 pdf" ;
+    mu:uuid "e9bcc2fe-b4bc-444a-972d-34bf7a39b01b" .
+
+<http://kanselarij.vo.data.gift/id/document-versies/36da8b39-caed-43ff-8114-5845113980b6> a ext:DocumentVersie ;
+    mu:uuid "36da8b39-caed-43ff-8114-5845113980b6" ;
+    ext:file <http://kanselarij.vo.data.gift/files/9dfbe7fa-40f5-4031-ae97-4e92ce7c31fa> ;
+    ext:gekozenDocumentNaam "Doc ver 1 pdf" ;
+    ext:omschrijving "Een document versie" ;
+    ext:versieNummer 1 .
+
+<http://kanselarij.vo.data.gift/files/9dfbe7fa-40f5-4031-ae97-4e92ce7c31fa> a nfo:FileDataObject ;
+mu:uuid "9dfbe7fa-40f5-4031-ae97-4e92ce7c31fa" ;
+    dbpedia:fileExtension "pdf" ;
+    dct:format "application/pdf" ;
+    nfo:fileName "nota pdf" .
+
+<share://nota.pdf> a nfo:FileDataObject ;
+    mu:uuid "340114dd-00b5-4d51-8f5a-76cfd5bd0b8b" ;
+    dbpedia:fileExtension "pdf" ;
+    dct:format "application/pdf" ;
+    nie:dataSource <http://kanselarij.vo.data.gift/files/9dfbe7fa-40f5-4031-ae97-4e92ce7c31fa> ;
+    nfo:fileName "nota pdf" .
+
+
