@@ -16,6 +16,8 @@
 <http://kanselarij.vo.data.gift/id/documenten/c66b2907-1dbb-4959-a850-cd3cd29b6827> a foaf:Document ;
     besluitvorming:heeftVersie <http://kanselarij.vo.data.gift/id/document-versies/30454bbd-691a-4e2a-b932-45859df3a5e1> ;
     ext:documentType <http://kanselarij.vo.data.gift/id/concept/document-type-codes/9e5b1230-f3ad-438f-9c68-9d7b1b2d875d>;
+    dct:title "Demo doc";
+    ext:omschrijving "Een belangrijke nota";
     besluitvorming:stuknummerVR "Doc 1 word" ;
     mu:uuid "c66b2907-1dbb-4959-a850-cd3cd29b6827" .
 
@@ -43,6 +45,8 @@
 <http://kanselarij.vo.data.gift/id/documenten/e9bcc2fe-b4bc-444a-972d-34bf7a39b01b> a foaf:Document ;
     besluitvorming:heeftVersie <http://kanselarij.vo.data.gift/id/document-versies/36da8b39-caed-43ff-8114-5845113980b6> ;
     ext:documentType <http://kanselarij.vo.data.gift/id/concept/document-type-codes/9e5b1230-f3ad-438f-9c68-9d7b1b2d875d>;
+    dct:title "Doc voor de viewer";
+    ext:omschrijving "Een tweede belangrijke nota";
     besluitvorming:stuknummerVR "Doc 1 pdf" ;
     mu:uuid "e9bcc2fe-b4bc-444a-972d-34bf7a39b01b" .
 
